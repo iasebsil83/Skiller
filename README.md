@@ -76,10 +76,9 @@ Quelques précisions:
 
 IL EST POSSIBLE QUE LE JEU NE DEMARE PAS CORRECTEMENT S'IL N'EST PAS DEMARRÉ PAR L'IDLE!
 
+Contact     : i.a.sebsil83@gmail.com
+Youtube     : https://www.youtube.com/user/IAsebsil83
+GitHub repo : https://github.com/iasebsil83/Skiller
 
-Si vous rencontrez un problème, écrivez-moi à l'adresse i.a.sebsil83@gmail.com.
-
-Repository GitHub : https://github.com/iasebsil83/Skiller
-
-Cordialement, I.A.
+Let's Code !                                  By I.A.
 
