@@ -338,7 +338,7 @@ def setKeys():
             elif S.key == 'P' + S.keys['right']:
                 S.keys['right'] = S.key[1:]
                 changeKey = 0
-        clear(fps)
+        clean(fps)
     S.menuText[0] = "Chat      : " + S.keys['chat']
     S.menuText[1] = "Stats     : " + S.keys['stats']
     S.menuText[2] = "Inventory : " + S.keys['inv']
@@ -370,7 +370,7 @@ def setKeys():
             elif S.key == 'P' + S.keys['keys']:
                 S.keys['keys'] = S.key[1:]
                 changeKey = 0
-        clear(fps)
+        clean(fps)
     S.menuText[0] = "Fight     : " + S.keys['spell0']
     S.menuText[1] = "Spell 1   : " + S.keys['spell1']
     S.menuText[2] = "Spell 2   : " + S.keys['spell2']
@@ -402,7 +402,7 @@ def setKeys():
             elif S.key == 'P' + S.keys['spell4']:
                 S.keys['spell4'] = S.key[1:]
                 changeKey = 0
-        clear(fps)
+        clean(fps)
     S.menuText[0] = "Spell 5   : " + S.keys['spell5']
     S.menuText[1] = "Spell 6   : " + S.keys['spell6']
     S.menuText[2] = "Spell 7   : " + S.keys['spell7']
@@ -434,7 +434,7 @@ def setKeys():
             elif S.key == 'P' + S.keys['spell9']:
                 S.keys['spell9'] = S.key[1:]
                 changeKey = 0
-        clear(fps)
+        clean(fps)
     S.menuText[0] = "          :"
     S.menuText[1] = "          :"
     S.menuText[2] = "          :"
@@ -455,7 +455,7 @@ def setKeys():
                 S.keys['next'] = S.key[1:]
                 changeKey = 0
             #elif S.key == 'P' + S.keys["other"]:
-        clear(fps)
+        clean(fps)
     sleep(0.4)
     for a in range(6):
         S.menuText[a] = ""
