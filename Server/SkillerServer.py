@@ -22,8 +22,11 @@ from time import sleep
 #############################################################################################################
 
 
-################################################## Config #####################################################
-serverPath   = "/home/starkiant/Documents/Coding/Python/old/2019/Projects/Skiller2/2.3.0/"
+
+
+################################################# CONFIG ######################################################
+#network
+serverPath   = "/home/starkiant/Documents/Coding/Python/old/2019/Projects/Skiller2/2.4.0_UNFINISHED/"
 mainPort     = 15557
 updaterPort  = 15558
 middleString = '_m_'
@@ -33,6 +36,8 @@ class Data:
     def __init__(self):
         self.orders = []
         self.alive = True
+
+
 
 
 ############################################### Functions ####################################################

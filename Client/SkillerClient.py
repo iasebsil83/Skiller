@@ -12,7 +12,7 @@ import os
 
 
 
-############################################# SKILLER[2.3.0] ################################################
+############################################# SKILLER[2.4.0] ################################################
 # CODE STRUCTURE:                                                                                           #
 #    -> DTN                                                                                                 #
 #    -> Update : Server                                                                                     #
@@ -31,6 +31,7 @@ import os
 #    -> All client systems reviewed (maximum optimisation)  [2.1.0]                                         #
 #    -> DTN_files system added                              [2.2.0]                                         #
 #    -> Server updates system added (Thread + 5 updates)    [2.3.0]                                         #
+#    -> DTN_files removed (except user connexion)           [2.4.0]                                         #
 #                                                                                                           #
 # TO DO :                                                                                                   #
 #    -> add the user class in 0/1 updates                                                                   #
@@ -42,17 +43,17 @@ import os
 #############################################################################################################
 
 
+################################################ CONFIG #####################################################
 
+#network
+serverPath  = "Server/_data/"
+serverIp    = '127.0.0.1'
+mainPort    = 15557
+updaterPort = 15558
 
-################################################# CONFIG ####################################################
-#server
-serverPath   = "Server/_data/"
-serverIp     = '127.0.0.1'
-mainPort     = 15557
-updaterPort  = 15558
+#other
 middleString = "_m_"
-
-
+refreshTime = 20 #in s
 
 
 ################################################## DTN ######################################################
@@ -1583,12 +1584,11 @@ server.connect((serverIp,mainPort))
 serverUpdater.connect((serverIp,updaterPort))
 print("Successfully connected to \"{0}\" !".format( serverPath[:int(len(serverPath)-1)] ))
 #timed updates
-refreshTime = 20 #in s
 timeUpdateThread = Thread(target=timeUpdate)
 timeUpdateThread.start()
 #graphics
 game = Tk()
-game.title('Skiller 2.3.0')
+game.title('Skiller 2.4.0')
 game.protocol('WM_DELETE_WINDOW',quitGame)
 display = Canvas(game,width=maxl-1,height=maxh-1,background='DarkGoldenrod3')
 display.bind('<KeyPress>',getKeyP)
